@@ -1,0 +1,37 @@
+{
+    "profile": {
+        "description": "Profesional con alta capacidad de adaptación a cambios, enfocado siempre en el logro de objetivos, con experiencia en distintas áreas, desde el diseño e implementación de SIA (empleando herramientas de análisis estructurado), manejo de base de datos, materias administrativas/financieras/contables.<br><br> Apasionado de las tecnologías, inquieto por el aprendizaje e iniciando en el mundo del desarrollo de aplicaciones, para lo cual he realizando un bootcamps, con la finalidad de adquirir las competencias básicas para iniciar en el desarrollo de aplicaciones, tanto Front como Back - End y asi optar a la certificación en:</p>",
+        "description_comp": "DESARROLLO DE APLICACIONES FULL STACK JAVASCRIPT TRAINEE",
+        "description_Adic": "Algo más de mi",
+        "description_Adic-text": "Una manera de ocupar mi tiempo libre, es realizar una de mis pasiones, la pesca y la extracción de productos del mar, me permiten disfrutar la vida, relajarme, concentrarme, reencontrarme y volver a empezar.<br><br>Nada mejor que disfrutar las costas del país y la naturaleza.</p>",
+        "description_Adic-contac": "Contacto"
+    },
+    "competition": {
+        "title": "COMPETENCIAS",
+        "subtitle": "Conocimiento",
+        "text-one": "Básico",
+        "text-two": "Intermedio",
+        "text-three": "Avanzado",
+        "subtitle-two": "Otros",
+        "Aptitud-one": "Aptitudes",
+        "Aptitud-two": "Orientado siempre al:",
+        "Apt-one": "Trabajo en equipo",
+        "Apt-two": "Resolución de problemas",
+        "Apt-three": "Proactividad",
+        "Apt-four": "Atención a los detalles",
+        "Apt-five": "Respeto",
+        "Apt-six": "Organizado",
+        "Apt-seven": "Planificado"
+    },
+    "project": {
+        "title": "PROYECTOS REALIZADOS",
+        "title-one": "Desarrollo Front End",
+        "title-two": "Desarrollo Back End",
+        "text-one": "Uno de los primeros proyectos desarrollados, introduciéndose en las nociones básicas de HTML5 y CSS.",
+        "text-two": "Proyecto desarrollado, aplicando HTML5, CSS e introduciéndose al uso de Bootstrap, trabajando con responsividad.",
+        "text-three": "Proyecto desarrollado, aplicando HTML5, CSS, Bootstrap, trabajando con responsividad, respetando los layout pre establecidos para el desarrollo del proyecto.",
+        "text-four": "Se da comienzo al aprendizaje de Javascript - Jquery, trabajando con variables y operadores lógicos.",
+        "text-five": "Desarrollo aplicación Súper Hero, aplicando conceptos de HTML5, CSS, Bootstrap, Javascript, Canvas y comenzando con el consumo de una API.",
+        "text-six": "Desarrollo aplicación, se comienza con nuevos conceptos como: Handlebars, NodeJs, Express. Se trabaja con conexión y creación de base de datos mediante Postgresql, se aplica pool de conexión y consultas a BD, con autenticación mediante JWT y aplicando un CRUD."
+    }
+}

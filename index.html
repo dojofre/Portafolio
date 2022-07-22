@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Fonawesomet-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <!--Fonts google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;600&display=swap" rel="stylesheet">
+  <!--Estilos propios-->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>MI_PORTAFOLIO</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <!--Colores-->
+    <div class="colors" id="toggle-colors">
+      <div data-color="hsl(214, 81%, 48%)" class="colors__item colors__item--blue"></div>
+      <div data-color="hsl(236, 47%, 60%)" class="colors__item colors__item--purple"></div>
+      <div data-color="hsl(42, 100%, 50%)" class="colors__item colors__item--orange"></div>
+      <div data-color="hsl(78, 95%, 73%)" class="colors__item colors__item--green-yellow"></div>
+    </div>
+
+    <div class="container--header">
+      <!--Banderas-->
+      <div class="flags" id="flags">
+        <div class="flags__item" data-language="es">
+          <img class="flags__img" src="./assets/icon/es.svg" alt="">
+        </div>
+        <div class="flags__item" data-language="en">
+          <img class="flags__img" src="./assets/icon/gb.svg" alt="">
+        </div>
+      </div>
+
+      <!--Interruptor-->
+      <Button class="switch" id="switch">
+        <span><i class="fas fa-sun"></i></span>
+        <span><i class="fas fa-moon"></i></span>
+      </Button>
+    </div>
+
+  </header>
+
+  <main class="main" id="wrapper">
+
+    <div class="card container-image__card">
+      <img src="./assets/img/Djofre.jpg" class="img_card_profile" alt="img1">
+      <div class="card-body">
+        <h2 class="title__card" id="text__page">Domingo Jofre L.</h2>
+        <p data-section="profile" data-value="description" id="text__page">
+          Profesional con alta capacidad de adaptación a cambios, enfocado siempre en el logro de objetivos, con
+          experiencia en distintas áreas, desde el diseño e implementación de SIA (empleando herramientas de análisis
+          estructurado), manejo de base de datos, materias administrativas/financieras/contables.
+          <br> <br>
+          Apasionado de las tecnologías, inquieto por el aprendizaje e iniciando en el mundo del desarrollo de
+          aplicaciones, para lo cual he realizando un bootcamps, con la finalidad de adquirir las competencias básicas
+          para iniciar en el desarrollo de aplicaciones, tanto Front como Back - End y asi optar a la certificación en:
+        </p><br><br>
+
+        <strong class="text_p boot" data-section="profile" data-value="description_comp">"DESARROLLO DE APLICACIONES
+          FULL
+          STACK JAVASCRIPT TRAINEE"</strong>
+
+        <br>
+
+      </div>
+    </div>
+
+  </main>
+
+  <section class="container--card" id="wrapper">
+
+    <div class="card">
+
+      <div>
+        <img src="./assets/img/PescadeCosta.jpg" alt="" id="img_H">
+        <h2 class="subtitle__card" id="text__page" data-section="profile" data-value="description_Adic">Algo más de mi
+        </h2>
+        <br>
+        <p id="text__page" data-section="profile" data-value="description_Adic-text">Una manera de ocupar mi tiempo
+          libre, es realizar una de mis pasiones, la pesca y la
+          extracción de
+          productos del mar, me permiten disfrutar la vida, relajarme, concentrarme, reencontrarme y volver a empezar.
+          <br><br>
+          Nada mejor que disfrutar las costas del país y la naturaleza.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card container__contact">
+
+      <div>
+        <div class="link__card">
+          <h2 class="subtitle__card card_contact" data-section="profile" data-value="description_Adic-contac"
+            id="text__page">Contacto</h2>
+        </div>
+        <div class="link__link">
+          <span>
+            <a href="mailto:dojofre@gmail.com" target="_blank"><i class="fab fa-envelope fa iconos"
+                id="icon__btn"></i></a>
+          </span>
+          <span>
+            <a href="https://wa.me/56954041295" target="_blank"><i class="fab fa-whatsapp iconos"
+                id="icon__btn"></i></a>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="container--card2" id="wrapper">
+
+    <!--Seccion 1: Graficas Barras y Aptitudes-->
+    <section class="card">
+
+      <h2 class="text_p title__card card_contact" data-section="competition" data-value="title">COMPETENCIAS</h2>
+
+      <article class="card">
+        <h2 class="title__card" id="text__page">Front End</h2>
+        <div class="barra">
+          <small class="barra__nivel" id="text__page" data-section="competition"
+            data-value="subtitle">Conocimiento</small>
+          <br>
+          <div class="barra__header">
+            <span class="barra__nivel"><small id="text__page" data-section="competition"
+                data-value="text-one">Básico</small></span>
+            <span class="barra__nivel"><small id="text__page" data-section="competition"
+                data-value="text-two">Intermedio</small></span>
+            <span class="barra__nivel"><small id="text__page" data-section="competition"
+                data-value="text-three">Avanzado</small></span>
+            <br>
+          </div>
+
+          <div class="barra__item">
+            <p class="barra__text">HTML</p>
+            <div class="barra__bar barra__bar--40"></div>
+          </div>
+          <div class="barra__item">
+            <p class="barra__text">CSS</p>
+            <div class="barra__bar barra__bar--40"></div>
+          </div>
+          <div class="barra__item">
+            <p class="barra__text">JavaScript</p>
+            <div class="barra__bar barra__bar--40"></div>
+          </div>
+          <div class="barra__item">
+            <p class="barra__text">Bootstrap</p>
+            <div class="barra__bar barra__bar--50"></div>
+          </div>
+          <div class="barra__item">
+            <p class="barra__text">Node.js</p>
+            <div class="barra__bar barra__bar--40"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="title__card" id="text__page" data-section="competition" data-value="subtitle-two">Otros</h2>
+        <div class="barra">
+          <small class="barra__nivel" id="text__page" data-section="competition"
+            data-value="subtitle">Conocimiento</small>
+          <br>
+          <div class="barra__header">
+            <span class="barra__nivel"><small id="text__page" data-section="competition"
+                data-value="text-one">Básico</small></span>
+            <span class="barra__nivel"><small id="text__page" data-section="competition"
+                data-value="text-two">Intermedio</small></span>
+            <span class="barra__nivel"><small id="text__page" data-section="competition"
+                data-value="text-three">Avanzado</small></span>
+            <br>
+          </div>
+
+          <div class="barra__item">
+            <p class="barra__text">GitHub</p>
+            <div class="barra__bar barra__bar--30"></div>
+          </div>
+          <div class="barra__item">
+            <p class="barra__text">MySQL</p>
+            <div class="barra__bar barra__bar--40"></div>
+          </div>
+          <div class="barra__item">
+            <p class="barra__text">PostgreSQL</p>
+            <div class="barra__bar barra__bar--40"></div>
+          </div>
+          <div class="barra__item">
+            <p class="barra__text">SQL</p>
+            <div class="barra__bar barra__bar--30"></div>
+          </div>
+      </article>
+
+      <article class="card">
+        <h2 class="title__card" id="text__page" data-section="competition" data-value="Aptitud-one">Aptitudes</h2><br>
+        <h4 class="subtitle__card" id="text__page" data-section="competition" data-value="Aptitud-two">Orientado siempre
+          al:</h4><br>
+
+        <div class="Apt__text-wrapper">
+          <p class="Apt__text" data-section="competition" data-value="Apt-one">Trabajo en equipo</p>
+          <i class="fas fa-check-square icon_p"></i>
+        </div>
+        <div class="Apt__text-wrapper">
+          <p class="Apt__text" data-section="competition" data-value="Apt-two">Resolución de problemas</p>
+          <i class="fas fa-check-square icon_p"></i>
+        </div>
+        <div class="Apt__text-wrapper">
+          <p class="Apt__text" data-section="competition" data-value="Apt-three">Proactividad</p>
+          <i class="fas fa-check-square icon_p"></i>
+        </div>
+        <div class="Apt__text-wrapper">
+          <p class="Apt__text" data-section="competition" data-value="Apt-four">Atención a los detalles</p>
+          <i class="fas fa-check-square icon_p"></i>
+        </div>
+        <div class="Apt__text-wrapper">
+          <p class="Apt__text" data-section="competition" data-value="Apt-five">Respeto</p>
+          <i class="fas fa-check-square icon_p"></i>
+        </div>
+        <div class="Apt__text-wrapper">
+          <p class="Apt__text" data-section="competition" data-value="Apt-six">Organizado</p>
+          <i class="fas fa-check-square icon_p"></i>
+        </div>
+        <div class="Apt__text-wrapper">
+          <p class="Apt__text" data-section="competition" data-value="Apt-seven">Planificado</p>
+          <i class="fas fa-check-square icon_p"></i>
+        </div>
+
+      </article>
+
+    </section>
+
+    <!--Seccion 2: Proyectos Realizados-->
+    <section class="card container__contact">
+
+      <h2 class="text_p title__card card_contact" data-section="project" data-value="title">PROYECTOS REALIZADOS</h2>
+
+      <div class="column--right">
+        <!--1-->
+        <article class="card">
+          <div class="project__info">
+            <img src="./assets/img/1_RICOMIDA.jpg" alt="img1" class="proyec__image">
+            <div>
+              <h3 class="sub_title__card project__job" data-section="project" data-value="title-one">
+                Desarrollo
+                Front End</h3>
+              <br>
+              <p id="text__page" class="project__description" data-section="project"
+                data-value="text-one"> Uno de los primeros proyectos desarrollados, introduciéndose en
+                las nociones básicas de HTML5 y CSS.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!--2-->
+        <article class="card">
+          <div class="project__info">
+            <img src="./assets/img/1.1_MEET_COFFE.jpg" alt="img2" class="proyec__image">
+            <div>
+              <h3 class="sub_title__card project__job" data-section="project" data-value="title-one">
+                Desarrollo
+                Front End</h3>
+              <br>
+              <p id="text__page" class="project__description" data-section="project"
+                data-value="text-two"> Proyecto desarrollado, aplicando HTML5, CSS e introduciéndose al
+                uso de Bootstrap, trabajando con responsividad.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!--3-->
+        <article class="card">
+          <div class="project__info">
+            <img src="./assets/img/2_SURICATA.jpg" alt="img3" class="proyec__image">
+            <div>
+              <h3 class="sub_title__card project__job" data-section="project" data-value="title-one">
+                Desarrollo
+                Front End</h3>
+              <br>
+              <p id="text__page" class="project__description" data-section="project"
+                data-value="text-three"> Proyecto desarrollado, aplicando HTML5, CSS, Bootstrap,
+                trabajando
+                con responsividad, respetando los layout pre establecidos para el desarrollo del proyecto.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!--4-->
+        <article class="card">
+          <div class="project__info">
+            <img src="./assets/img/3_JS_VAR.jpg" alt="img4" class="proyec__image">
+            <div>
+              <h3 class="sub_title__card project__job" data-section="project" data-value="title-one">
+                Desarrollo
+                Front End</h3>
+              <br>
+              <p id="text__page" class="project__description" data-section="project"
+                data-value="text-four"> Se da comienzo al aprendizaje de Javascript - Jquery, trabajando
+                con variables y operadores lógicos.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!--5-->
+        <article class="card">
+          <div class="project__info">
+            <img src="./assets/img/4_SUPERHERO.jpg" alt="img5" class="proyec__image">
+            <div>
+              <h3 class="sub_title__card project__job" data-section="project" data-value="title-one">
+                Desarrollo
+                Front End</h3>
+              <br>
+              <p id="text__page" class="project__description" data-section="project"
+                data-value="text-five"> Desarrollo aplicación Súper Hero, aplicando conceptos de HTML5,
+                CSS, Bootstrap, Javascript, Canvas y comenzando con el consumo de una API.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!--6-->
+        <article class="card">
+          <div class="project__info">
+            <img src="./assets/img/7_LANASA.jpg" alt="img6" class="proyec__image">
+            <div>
+              <h3 class="sub_title__card project__job" data-section="project" data-value="title-two">
+                Desarrollo
+                Back End</h3>
+              <br>
+              <p id="text__page" class="project__description" data-section="project"
+                data-value="text-six"> Desarrollo aplicación, se comienza con nuevos conceptos como:
+                Handlebars, NodeJs, Express. Se trabaja con conexión y creación de base de datos mediante Postgresql, se
+                aplica pool de conexión y consultas a BD, con autenticación mediante JWT y aplicando un CRUD.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+  </section>
+
+  <footer>
+
+    <div>
+      <div class="wrapper--footer">
+        <div class="link github" id="btn_github">
+          <div class="tooltip">GitHub Code</div>
+          <span>
+            <a target="_blank"><i class="fab fa-github icon" id="icon__btn"></i></a>
+          </span>
+        </div>
+        <div class="link linkedin" id="btn_linkedin">
+          <div class="tooltip">Linkedin</div><span>
+            <a target="_blank"><i class="fab fa-linkedin icon" id="icon__btn"></i></a>
+          </span>
+        </div>
+        <div class="link WhatsApp" id="btn_whatsapp">
+          <div class="tooltip">WhatsApp</div><span>
+            <a target="_blank"><i class="fab fa-whatsapp icon" id="icon__btn"></i></a>
+          </span>
+        </div>
+        <div class="link Mail" id="btn_mail">
+          <div class="tooltip">Mail</div>
+          <span>
+            <a target="_blank"><i class="fab fa-envelope fa icon" id="icon__btn"></i></a>
+          </span>
+        </div>
+      </div>
+      <div>
+        <h2 class="subtitle__card card_contact" id="text__page" data-section="profile" data-value="description_Adic-contac">Contacto</h2>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+  <!--Desactivar boton derecho del mouse
+  <script type="text/javascript" language="Javascript">
+    document.oncontextmenu = function () { return false }
+  </script>-->
+</body>
+
+</html>

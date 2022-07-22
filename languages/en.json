@@ -1,0 +1,37 @@
+{
+    "profile": {
+        "description": "Professional with a high capacity to adapt to changes, always focused on achieving objectives, with experience in different areas, from the design and implementation of SIA (using structured analysis tools), database management, administrative/financial/accounting matters .<br><br> Passionate about technologies, restless about learning and starting in the world of application development, for which I have carried out bootcamps, in order to acquire the basic skills to start in application development, both Front and Back - End and thus opt for certification in:</p>",
+        "description_comp": "DEVELOPMENT OF FULL STACK JAVASCRIPT TRAINEE APPLICATIONS",
+        "description_Adic": "Something more about me",
+        "description_Adic-text": "One way to occupy my free time is to carry out one of my passions, fishing and the extraction of products from the sea, they allow me to enjoy life, relax, concentrate, rediscover myself and start over.<br><br>Nothing better than enjoy the coasts of the country and nature.</p>",
+        "description_Adic-contac": "Contact"
+    },
+    "competition": {
+        "title": "COMPETENCIES",
+        "subtitle": "Knowledge",
+        "text-one": "Essential",
+        "text-two": "Intermediate",
+        "text-three": "Advanced",
+        "subtitle-two": "Others",
+        "Aptitud-one": "Aptitudes",
+        "Aptitud-two": "Always oriented to:",
+        "Apt-one": "Teamwork",
+        "Apt-two": "Problem resolution",
+        "Apt-three": "Proactivity",
+        "Apt-four": "Attention to details",
+        "Apt-five": "Respect",
+        "Apt-six": "Organized",
+        "Apt-seven": "Planned"
+    },
+    "project": {
+        "title": "FULFILLED PROJECTS",
+        "title-one": "Front End Development",
+        "title-two": "Back End Development",
+        "text-one": "One of the first projects developed, introducing the basic notions of HTML5 and CSS.",
+        "text-two": "Developed project, applying HTML5, CSS and introducing the use of Bootstrap, working with responsiveness.",
+        "text-three": "Developed project, applying HTML5, CSS, Bootstrap, working responsively, respecting the pre-established layout for project development.",
+        "text-four": "Learning Javascript - Jquery begins, working with variables and logical operators.",
+        "text-five": "I develop Super Hero application, applying concepts of HTML5, CSS, Bootstrap, Javascript, Canvas and starting with the consumption of an API.",
+        "text-six": "Application development, starting with new concepts such as: Handlebars, NodeJs, Express. It works with connection and database creation through Postgresql, connection pool and queries are applied to BD, with authentication through JWT and applying a CRUD."
+    }
+}

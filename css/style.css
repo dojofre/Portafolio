@@ -1,0 +1,696 @@
+/*Variables*/
+:root {
+  --primary-color: hsl(214, 84%, 56%);
+  --text-color: hsl(#070928);
+  --bg-color: hsl(#fFFFFF);
+  --bg-card-color: hsl(#fafafad7);
+  --transition: color 0.1s, background-color 0.2s ease-in-out;
+  /*esta variable controla el cambio de color y de background color*/
+  --border-radius: 0.4em;
+  /*Controlara todos los bordes de las tarjetas*/
+  --skill-bar-length: 0%;
+  /*Controlamos el largo de la barra, comenzamos en un 0%*/
+}
+
+
+
+/*Estilos*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: var(--transition);
+  font-family: 'Rokkitt', serif;
+  max-width: 100%;
+  line-height: 1.1;
+}
+
+
+
+/*Estilo oscuro body*/
+body.dark {
+  --text-color: hsl(0, 0%, 83%);
+  --bg-color: hsl(0, 0%, 21%);
+  --bg-card-color: hsl(0, 0%, 24%);
+}
+
+
+
+/*Estilos Colores*/
+.colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 70px;
+}
+
+.colors__item {
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--text-color);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.colors__item--blue {
+  --primary-color: hsl(214, 81%, 48%);
+}
+
+.colors__item--green-yellow {
+  --primary-color: hsl(78, 95%, 73%);
+}
+
+.colors__item--orange {
+  --primary-color: hsl(42, 100%, 50%);
+}
+
+.colors__item--purple {
+  --primary-color: hsl(236, 47%, 60%);
+}
+
+
+
+/*Estilos del header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  padding: 0 1.5em;
+  background-color: var(--bg-card-color);
+  transition: var(--transition);
+}
+
+.container--header {
+  justify-content: center;
+  display: inline-flex;
+}
+
+.switch {
+  background: var(--text-color);
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+
+.switch>span {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 50%;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active {
+  background: rgb(91, 149, 214);
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.fas {
+  color: var(--primary-color);
+}
+
+.flags {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.flags__item {
+  width: 28px;
+}
+
+.flags__img {
+  display: block;
+  cursor: pointer;
+}
+
+
+
+/*Style*/
+#text__page {
+  color: var(--text-color);
+}
+
+.text_p {
+  font-size: 1.2rem;
+  font-family: 'Rokkitt';
+  color: var(--primary-color);
+}
+
+
+/*Columnas*/
+@media (max-width: 767.98px) {
+  #wrapper {
+    display: grid;
+    padding: .7em;
+    gap: .4em;
+  }
+
+  .container__contact {
+    display: none;
+  }
+
+  .title__card {
+    font-size: 1.2rem;
+  }
+
+  .boot {
+    font-size: 1rem;
+  }
+
+  .subtitle__card {
+    font-size: 1.1rem;
+  }
+
+  .sub_title__card {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #img_H {
+    max-height: 125px;
+    max-width: 50%;
+  }
+
+  .img_card_profile {
+    max-height: 200px;
+    max-width: 50%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #wrapper {
+    display: grid;
+    padding: 1.3em;
+    margin: 0 5px;
+    gap: .5em;
+  }
+
+  .container__contact {
+    display: block;
+  }
+
+  .container--card {
+    grid-template-columns: 1.2fr .7fr;
+    grid-gap: 5px;
+  }
+
+  .iconos {
+    font-size: 3rem;
+    margin: 1rem;
+    color: var(--primary-color);
+  }
+
+  .title__card {
+    font-size: 1.6rem;
+  }
+
+  .boot {
+    font-size: 1.2rem;
+  }
+
+  .subtitle__card {
+    font-size: 1.2rem;
+  }
+
+  .sub_title__card {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 105%;
+  }
+
+  .img_card_profile {
+    max-height: 300px;
+    max-width: 50%;
+  }
+
+  #img_H {
+    max-height: 125px;
+    max-width: 50%;
+  }
+
+  .container--card2 {
+    grid-template-columns: 300px 1fr;
+    grid-gap: 5px;
+  }
+
+  .column--right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    align-items: start;
+  }
+
+  .proyec__image {
+    max-width: 15vh;
+  }
+
+  .project__job {
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 1024.02px) {
+
+  #wrapper {
+    display: grid;
+    padding: 1em;
+    margin: 0 .9px;
+    gap: .5em;
+  }
+
+  .container__contact {
+    display: block;
+  }
+
+  .container--card {
+    grid-template-columns: 1.2fr .7fr;
+    grid-gap: 5px;
+  }
+
+  .iconos {
+    font-size: 8vh;
+    margin: 1rem;
+    color: var(--primary-color);
+  }
+
+  .title__card {
+    font-size: 2.3rem;
+  }
+
+  .boot {
+    font-size: 1.6rem;
+  }
+
+  .subtitle__card {
+    font-size: 1.5rem;
+  }
+
+  .sub_title__card {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 130%;
+  }
+
+  .img_card_profile {
+    max-height: 300px;
+    max-width: 50%;
+  }
+
+  #img_H {
+    max-height: 200px;
+    max-width: 50%;
+  }
+
+  .container--card2 {
+    grid-template-columns: 300px 1fr;
+    grid-gap: 5px;
+  }
+
+  .column--right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    align-items: start;
+  }
+
+  .proyec__image {
+    max-width: 260px;
+  }
+
+  body{
+    margin: 0 200px;
+  }
+
+}
+
+
+
+/*Tarjetas*/
+.card {
+  padding: .5em;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+  text-align: justify;
+}
+
+.container-image__card {
+  min-width: 300px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.card--body {
+  margin: 10px 7%;
+}
+
+.title__card {
+  font-weight: 600;
+  padding: 5px 3%;
+}
+
+.boot {
+  font-weight: 600;
+  padding: 5px 3%;
+}
+
+.subtitle__card {
+  font-weight: 600;
+  opacity: .7;
+  padding: 5px 3%;
+}
+
+.sub_title__card {
+  font-weight: 600;
+  padding: 5px 3%;
+}
+
+.card_contact {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-weight: 400;
+  padding: 0 3%;
+}
+
+
+
+/*Sección datos Personales*/
+.img_card_profile {
+  border-radius: 10px;
+  float: left;
+  margin-right: 15px;
+}
+
+#img_H {
+  float: right;
+  margin: 20px 20px 5px;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: var(--primary-color);
+  border-width: 3px;
+}
+
+
+
+/*Contacto 1*/
+.link__card {
+  margin-bottom: 0.5em;
+}
+
+.link__link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+/*Estilo Barras -- Estilos tarjeta de grafica barra*/
+.barra {
+  padding: 1em 0;
+}
+
+.barra__header {
+  display: flex;
+  justify-content: space-between;
+  width: 197px;
+  /*mismo que mide la barra*/
+  margin-left: auto;
+}
+
+.barra__nivel {
+  font-size: 1.09rem;
+  font-family: 'Rokkitt';
+  font-weight: 300;
+  margin-left: 7px;
+}
+
+.barra__text {
+  margin: 0;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: 'Rokkitt';
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.Apt__text {
+  margin-left: 12px;
+  padding-top: 2px;
+  font-size: 1.1rem;
+  font-family: 'Rokkitt';
+  color: var(--text-color);
+}
+
+.Apt__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.barra__item {
+  /*Esta clase contiene tanto el nombre como la barra alineado verticalmente*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .5em;
+}
+
+.barra__bar,
+.barra__bar::after {
+  /*creamos la barra*/
+  position: relative;
+  width: 175px;
+  /*tamaño de la barra*/
+  height: 8px;
+  background-color: #888;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  /*con esto impedimos que lo que desborde en la barra no se vea*/
+}
+
+.barra__bar::after {
+  /*creamos el relleno de la barra*/
+  content: '';
+  /*para que se dibuje el bar*/
+  position: absolute;
+  left: -175px;
+  /*con esto obtengo que la barra aparezca desde la izquierda*/
+  background-color: var(--primary-color);
+  transition: var(--transition);
+  animation: barra__bar-fill 2s ease-in-out forwards;
+  /*con esto activamos la animación, el forwards permite que se quede el % justo donde termina*/
+}
+
+.barra__bar--10::after {
+  --skill-bar-length: 10%;
+}
+
+.barra__bar--20::after {
+  --skill-bar-length: 20%;
+}
+
+.barra__bar--30::after {
+  --skill-bar-length: 30%;
+}
+
+.barra__bar--40::after {
+  --skill-bar-length: 40%;
+}
+
+.barra__bar--50::after {
+  --skill-bar-length: 50%;
+}
+
+.barra__bar--60::after {
+  --skill-bar-length: 60%;
+}
+
+.barra__bar--70::after {
+  --skill-bar-length: 70%;
+}
+
+.barra__bar--80::after {
+  --skill-bar-length: 80%;
+}
+
+.barra__bar--90::after {
+  --skill-bar-length: 90%;
+}
+
+/*Aqui agregamos animación de la barra*/
+@keyframes barra__bar-fill {
+  to {
+    transform: translateX(var(--skill-bar-length));
+    /*con esto logramos que la barra se mueva horizontalmente hasta lo que valga la variable, comenzando en 0%*/
+  }
+}
+
+.icon_p {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+
+
+/*Proyectos*/
+.proyec__image {
+  float: right;
+  margin: 0 10px 5px 5px;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: var(--primary-color);
+  border-width: 3px;
+}
+
+.project__info {
+  margin-bottom: 30px;
+}
+
+
+
+/*footer*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 60px 1.5em;
+  background-color: var(--bg-card-color);
+  transition: var(--transition);
+}
+
+.icon {
+  font-size: 35px;
+  margin: 1rem 0;
+}
+
+#icon__btn {
+  color: var(--primary-color);
+}
+
+/*footer -- Animación Redes Sociales*/
+.wrapper--footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 0;
+}
+
+.wrapper--footer .link {
+  position: relative;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+@media (hover: hover){
+  
+  .wrapper--footer .link i {
+    color: var(--primary-color);
+    transition: .4s linear;
+  }
+  
+  .wrapper--footer .link::before,
+  .wrapper--footer .link::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+  }
+
+  .wrapper--footer .link:hover::before {
+    border-radius: 50%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+    color: var(--primary-color);
+  }
+  
+  .wrapper--footer .link:hover::after {
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewX(-20deg);
+    color: var(--primary-color);
+  }
+
+  .wrapper--footer .link:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+}
+
+.wrapper--footer .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  text-align: center;
+  color: var(--text-color);
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
